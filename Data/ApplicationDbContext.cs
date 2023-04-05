@@ -15,5 +15,8 @@ namespace Calendar.Data
         {
             base.OnModelCreating(builder);
         }
+
+        public DbSet<Event> Events { get; set; }
+        public DbSet<Location> Locations { get; set; }
     }
 }
